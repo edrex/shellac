@@ -1,3 +1,3 @@
-{pkgs}: {
-  mkTydraMenu = menu@{...}: ((pkgs.formats.yaml {}).generate "menu.yaml" menu);
+{
+  mkShell = import lib/mkShell.nix;
 }
